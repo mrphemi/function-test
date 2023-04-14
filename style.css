@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-function-blue;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-full px-6 xl:px-8;
+  }
+
+  .text-small {
+    @apply text-[13px] leading-4;
+  }
+}

@@ -4,16 +4,63 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Function Test</title>
   </head>
   <body>
-    <div id="app" class="space-y-10">
-      <h1 class="text-4xl font-light">Sphinx of black quartz, judge my vow.</h1>
-      <p class="text-sm">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae,
-        quisquam.
-      </p>
-    </div>
+    <nav>
+      <div class="xl:container xl:flex">
+        <!-- Logo -->
+        <div
+          class="flex justify-between border-b-2 border-function-light-grey-default xl:border-b-transparent xl:border-r-2 py-5 px-6 xl:pl-0"
+        >
+          <!-- hamburger menu -->
+          <div class="flex gap-x-3 cursor-pointer xl:hidden">
+            <img src="/assets/menu-icon.svg" alt="hamburger menu" />
+            <p class="capitalize text-small self-center">menu</p>
+          </div>
+
+          <!-- logo -->
+          <img
+            src="/assets/logo.svg"
+            alt="brand logo"
+            class="max-w-[106px] mx-auto"
+          />
+
+          <!-- cart -->
+          <img src="/assets/bag-icon.svg" alt="cart icon" class="xl:hidden" />
+        </div>
+
+        <!-- links -->
+        <ul
+          x-data="{ links: ['what’s new', 'designers', 'clothing', 'accessories', 'journal', 'gifts'] }"
+          class="hidden xl:flex items-center gap-x-6 ml-8"
+        >
+          <template x-for="link in links">
+            <li class="capitalize text-small">
+              <a href="#" x-text="link"></a>
+            </li>
+          </template>
+        </ul>
+
+        <!-- search bar -->
+        <div class="px-6 py-4 xl:px-0 xl:ml-auto xl:min-w-[350px]">
+          <div
+            class="bg-function-light-grey-default flex focus-within:ring-1 focus-within:ring-function-blue"
+          >
+            <div class="flex items-center pl-5">
+              <img src="/assets/search.svg" alt="search icon" />
+            </div>
+            <input
+              type="text"
+              name="search"
+              placeholder="Search for ‘Cashmere’"
+              class="w-full py-4 pl-4 bg-inherit text-small outline-none placeholder:text-function-dark-grey-default"
+            />
+          </div>
+        </div>
+      </div>
+    </nav>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
