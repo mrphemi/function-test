@@ -17,3 +17,9 @@
     @apply text-[13px] leading-4;
   }
 }
+
+.header {
+  background-image: url("/assets/AFeature.png");
+  background-position-x: center;
+  background-position-y: 25%;
+}
