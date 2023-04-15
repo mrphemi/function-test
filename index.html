@@ -11,7 +11,7 @@
       <div class="xl:container xl:flex">
         <!-- Logo -->
         <div
-          class="flex gap-x-[52px] border-b-2 border-function-light-grey-default xl:border-b-transparent xl:border-r-2 py-5 px-6 xl:pl-0"
+          class="flex gap-x-[52px] sm:gap-x-0 sm:justify-between border-b-2 border-function-light-grey-default xl:border-b-transparent xl:border-r-2 py-5 px-6 xl:pl-0"
         >
           <!-- hamburger menu -->
           <div class="flex gap-x-3 cursor-pointer xl:hidden">
@@ -26,7 +26,7 @@
           <img
             src="/assets/bag-icon.svg"
             alt="cart icon"
-            class="xl:hidden ml-auto"
+            class="xl:hidden ml-auto sm:ml-0"
           />
         </div>
 
@@ -177,7 +177,7 @@
     </section>
 
     <!-- doorway section -->
-    <section class="my-14 container">
+    <section class="my-12 xl:my-16 container">
       <div
         class="max-w-[1144px] mx-auto flex flex-col lg:flex-row gap-y-5 gap-x-4"
       >
@@ -296,11 +296,11 @@
       </a>
     </section>
 
-    <footer class="bg-function-blue py-8 xl:py-16">
+    <footer class="bg-function-blue py-12 xl:py-16">
       <div class="container">
         <!-- footer links -->
         <div
-          class="max-w-[1144px] mx-auto flex flex-col lg:flex-row gap-y-6 gap-x-24 mb-16"
+          class="max-w-[1144px] mx-auto flex flex-col lg:flex-row gap-y-6 gap-x-24 mb-12 xl:mb-16"
         >
           <div
             x-data="{links: ['Login', 'Sign Up', 'Redeem a Gift Card']}"
