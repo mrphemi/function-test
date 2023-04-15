@@ -182,7 +182,12 @@
         class="max-w-[1144px] mx-auto flex flex-col lg:flex-row gap-y-5 gap-x-4"
       >
         <div>
-          <img src="/assets/doorway-1.png" alt="doorway image" class="w-full" />
+          <img
+            src="/assets/doorway-1.png"
+            alt="doorway image"
+            loading="lazy"
+            class="w-full"
+          />
           <div class="max-w-[466px] space-y-3 mt-8">
             <h3 class="capitalize">the casual edit</h3>
             <p
@@ -217,7 +222,12 @@
           </a>
         </div>
         <div>
-          <img src="/assets/doorway-2.png" alt="doorway image" class="w-full" />
+          <img
+            src="/assets/doorway-2.png"
+            alt="doorway image"
+            loading="lazy"
+            class="w-full"
+          />
           <div class="max-w-[466px] space-y-3 mt-8">
             <h3 class="capitalize">the denim edit</h3>
             <p
@@ -285,6 +295,63 @@
         </div>
       </a>
     </section>
+
+    <footer class="bg-function-blue py-8 xl:py-16">
+      <div class="container">
+        <!-- footer links -->
+        <div
+          class="max-w-[1144px] mx-auto flex flex-col lg:flex-row gap-y-6 gap-x-24 mb-16"
+        >
+          <div
+            x-data="{links: ['Login', 'Sign Up', 'Redeem a Gift Card']}"
+            class="space-y-3"
+          >
+            <h4 class="text-white text-lg leading-8 font-light">Account</h4>
+            <ul class="space-y-1">
+              <template x-for="link in links">
+                <li class="text-function-dark-grey-alt text-sm leading-6">
+                  <a href="#" x-text="link"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <div
+            x-data="{links: ['VIP Lounge Rewards', 'Reviews', 'Sustainability', 'Recycling Scheme', 'About Us', 'Become an Affiliate', 'Careers', 'Stockists']}"
+            class="space-y-3"
+          >
+            <h4 class="text-white text-lg leading-8 font-light">Company</h4>
+            <ul class="space-y-1">
+              <template x-for="link in links">
+                <li class="text-function-dark-grey-alt text-sm leading-6">
+                  <a href="#" x-text="link"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <div
+            x-data="{links: ['Contact Us', 'Shipping Information', 'Return Policy']}"
+            class="space-y-3"
+          >
+            <h4 class="text-white text-lg leading-8 font-light">Get Help</h4>
+            <ul class="space-y-1">
+              <template x-for="link in links">
+                <li class="text-function-dark-grey-alt text-sm leading-6">
+                  <a href="#" x-text="link"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+        </div>
+        <hr class="border-white/20" />
+
+        <div
+          class="mt-8 text-white text-[13px] leading-[19px] flex justify-center gap-x-4"
+        >
+          <p>© Function 2023</p>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>
