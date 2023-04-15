@@ -36,7 +36,9 @@
           class="hidden xl:flex items-center gap-x-6 ml-8"
         >
           <template x-for="link in links">
-            <li class="capitalize text-small">
+            <li
+              class="capitalize text-small hover:text-function-dark-grey-default"
+            >
               <a href="#" x-text="link"></a>
             </li>
           </template>
@@ -102,11 +104,11 @@
       <div class="container flex justify-between items-center">
         <h2 class="capitalize">best sellers</h2>
 
-        <!-- button -->
+        <!-- link button -->
         <a href="#">
-          <div class="flex items-center border border-function-blue/20">
+          <div class="flex items-center border border-function-blue/20 group">
             <p
-              class="capitalize text-small border-r border-function-blue/20 py-4 px-4"
+              class="capitalize text-small group-hover:text-function-dark-grey-default border-r border-function-blue/20 py-4 px-4"
             >
               shop all
             </p>
@@ -120,7 +122,7 @@
               >
                 <path
                   d="M1.00246 0.265855C0.802456 0.065855 0.492456 0.065855 0.292456 0.265855C0.0924555 0.465855 0.0924556 0.775855 0.292456 0.975855L5.43746 6.12085L0.292456 11.2659C0.0924561 11.4659 0.0924562 11.7759 0.292456 11.9759C0.492456 12.1759 0.802456 12.1759 1.00246 11.9759L6.85746 6.12085L1.00246 0.265855Z"
-                  fill="black"
+                  class="fill-black group-hover:fill-function-dark-grey-default"
                 />
               </svg>
             </div>
@@ -188,7 +190,7 @@
             loading="lazy"
             class="w-full"
           />
-          <div class="max-w-[466px] space-y-3 mt-8">
+          <div class="max-w-[466px] space-y-3 mt-8 group">
             <h3 class="capitalize">the casual edit</h3>
             <p
               class="text-function-light-grey-alt text-[13px] leading-[19px] w-3/4 md:w-full max-w-full"
@@ -197,10 +199,12 @@
               eiusmod tempor incididunt ut labore et dolore magna.
             </p>
           </div>
+
+          <!-- link button -->
           <a href="#" class="inline-block mt-6">
-            <div class="flex items-center border border-function-blue/20">
+            <div class="flex items-center border border-function-blue/20 group">
               <p
-                class="capitalize text-small border-r border-function-blue/20 py-4 px-4"
+                class="capitalize text-small group-hover:text-function-dark-grey-default border-r border-function-blue/20 py-4 px-4"
               >
                 shop all
               </p>
@@ -214,7 +218,7 @@
                 >
                   <path
                     d="M1.00246 0.265855C0.802456 0.065855 0.492456 0.065855 0.292456 0.265855C0.0924555 0.465855 0.0924556 0.775855 0.292456 0.975855L5.43746 6.12085L0.292456 11.2659C0.0924561 11.4659 0.0924562 11.7759 0.292456 11.9759C0.492456 12.1759 0.802456 12.1759 1.00246 11.9759L6.85746 6.12085L1.00246 0.265855Z"
-                    fill="black"
+                    class="fill-black group-hover:fill-function-dark-grey-default"
                   />
                 </svg>
               </div>
@@ -237,10 +241,12 @@
               eiusmod tempor incididunt ut labore et dolore magna.
             </p>
           </div>
+
+          <!-- link button -->
           <a href="#" class="inline-block mt-6">
-            <div class="flex items-center border border-function-blue/20">
+            <div class="flex items-center border border-function-blue/20 group">
               <p
-                class="capitalize text-small border-r border-function-blue/20 py-4 px-4"
+                class="capitalize text-small group-hover:text-function-dark-grey-default border-r border-function-blue/20 py-4 px-4"
               >
                 shop all
               </p>
@@ -254,7 +260,7 @@
                 >
                   <path
                     d="M1.00246 0.265855C0.802456 0.065855 0.492456 0.065855 0.292456 0.265855C0.0924555 0.465855 0.0924556 0.775855 0.292456 0.975855L5.43746 6.12085L0.292456 11.2659C0.0924561 11.4659 0.0924562 11.7759 0.292456 11.9759C0.492456 12.1759 0.802456 12.1759 1.00246 11.9759L6.85746 6.12085L1.00246 0.265855Z"
-                    fill="black"
+                    class="fill-black group-hover:fill-function-dark-grey-default"
                   />
                 </svg>
               </div>
@@ -273,9 +279,12 @@
         </p>
       </div>
 
+      <!-- link button -->
       <a href="#" class="inline-block mt-6">
-        <div class="flex items-center border border-white/20">
-          <p class="capitalize text-small border-r border-white/20 py-4 px-4">
+        <div class="flex items-center border border-white/20 group">
+          <p
+            class="capitalize text-small group-hover:text-function-dark-grey-default border-r border-white/20 py-4 px-4"
+          >
             learn more
           </p>
           <div class="px-4">
@@ -288,7 +297,7 @@
             >
               <path
                 d="M1.00246 0.265855C0.802456 0.065855 0.492456 0.065855 0.292456 0.265855C0.0924555 0.465855 0.0924556 0.775855 0.292456 0.975855L5.43746 6.12085L0.292456 11.2659C0.0924561 11.4659 0.0924562 11.7759 0.292456 11.9759C0.492456 12.1759 0.802456 12.1759 1.00246 11.9759L6.85746 6.12085L1.00246 0.265855Z"
-                class="fill-white"
+                class="fill-white group-hover:fill-function-dark-grey-default"
               />
             </svg>
           </div>
