@@ -6,6 +6,11 @@
   body {
     @apply text-function-blue;
   }
+
+  h2,
+  h3 {
+    @apply font-light text-xl xl:text-2xl;
+  }
 }
 
 @layer utilities {
@@ -18,8 +23,18 @@
   }
 }
 
+@layer components {
+  .product-card {
+    flex: 0 0 80%;
+  }
+}
+
 .header {
   background-image: url("/assets/AFeature.png");
   background-position-x: center;
   background-position-y: 25%;
+}
+
+.products::-webkit-scrollbar {
+  display: none;
 }
